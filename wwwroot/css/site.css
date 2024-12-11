@@ -1,0 +1,226 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-family: Rockwell;
+    margin-left: 20px;
+}
+
+.container-fluid {
+    font-size: 18px;
+    font-family: Rockwell;
+}
+
+.navbar-collapse {
+    margin-left: 20px;
+}
+
+.container2 {
+    margin-left: 43%;
+}
+
+.WhoWeAre-container {
+    margin-top: 60px;
+}
+.WhatWeOffer-container {
+    margin-top: 60px;
+    margin-bottom: 45px;
+}
+
+.WhatWeOffer-container-card {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.WhatWeOffer-card {
+    background-color: #f4f5f7;
+    border-radius: 10px;
+    color: #323a45;
+    display: flex;
+    filter: drop-shadow(0 4px 4px white);
+    flex: calc(33.3333% - 20px);
+    flex-direction: column;
+    margin: 15px;
+    padding: 22px 30px;
+    text-decoration: none;
+    transition: color .2s linear, transform .4s;
+}
+
+.WhatWeOffer-card:hover {
+    color: black;
+    filter: drop-shadow(0 4px 4px rgba(50,56,69,.2));
+
+}
+
+.text-overlay {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 727px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text-overlay p {
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.text-overlay-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 30%;
+    left: 10%;
+}
+
+.text-overlay h1 {
+    font-family: Arial;
+}
+
+.text-overlay a {
+    font-family: Arial;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.Info-container {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fade-in 0.5s ease-in;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+.WriteToUs-container {
+    display: flex;
+    flex: calc(33.3333% - 20px);
+    flex-direction: column;
+    margin-left: 15px;
+    position: relative;
+    border-left: 2px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-color: black;
+    border-style: solid;
+    padding-left: 20px;
+}
+
+
+
+@keyframes fade-in {
+    0% {
+        /* Effect values */
+        opacity: 0;
+        transform: translateY(50px);
+    }
+}
+
+@media (max-width: 1399px) {
+    .text-overlay {
+        height: 627px;
+    }
+
+    .text-overlay h1 {
+        font-size: 28px;
+    }
+
+    .text-overlay p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .text-overlay {
+        height: 525px;
+    }
+
+    .text-overlay h1 {
+        font-size: 24px;
+    }
+
+    .text-overlay p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .text-overlay {
+        height: 389px;
+    }
+
+    .text-overlay h1 {
+        font-size: 24px;
+    }
+
+    .text-overlay p {
+        font-size: 14px;
+        padding-right: 120px;
+    }
+
+    .text-overlay a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .text-overlay {
+        height: 291px;
+    }
+
+    .text-overlay h1 {
+        font-size: 20px;
+    }
+
+    .text-overlay p {
+        display: none;
+    }
+
+    .text-overlay a {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .Video-container {
+        display: none;
+    }
+}
+
